@@ -1,0 +1,14 @@
+/*
+var input = require("fs").readFileSync("stdin", "utf-8");
+var lines = input.split('\n');
+
+var qtdValores = 0;
+
+for(var i = 0; i<5; i++){
+    if(lines[i] % 2 == 0){
+        qtdValores++; 
+    }
+}
+
+console.log(qtdValores + " valores pares");
+*/
