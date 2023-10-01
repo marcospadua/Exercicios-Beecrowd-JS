@@ -13,11 +13,4 @@ let lines = conteudoArquivo.split(quebraLinhaWindows);
 //para ler linhas com um unico valor na mesma linha use o comando a seguir
 //let valorA = lines.shift();
 
-for (let i = 1; i <= 9; i++) {
-    for(let j = 7; j <= 13; j++){    
-        console.log(`I=${i} J=${j}`);   
-    }
-    i++
-}
-
 

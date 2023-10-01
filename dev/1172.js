@@ -11,11 +11,8 @@ let lines = conteudoArquivo.split(quebraLinhaWindows);
 //let [var1, var2, var3, var4] = lines.shift().split(" "); 
 
 //para ler linhas com um unico valor na mesma linha use o comando a seguir
-//let valorA = lines.shift();
+let valor = lines.shift();
 
-let notas;
-let notaValida = 0;
-let media = 0;
-let opcao = 0;
-
-console.log(`media = ${media.toFixed(2)}`);
+for (let i = 0; i < 10; i++){
+    if(valor[i])
+}
