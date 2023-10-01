@@ -51,3 +51,4 @@ do {
     opcao = valoresEntradas;
     
 } while (opcao !== 2)
+
