@@ -11,4 +11,4 @@ let lines = conteudoArquivo.split(quebraLinhaWindows);
 //let [var1, var2, var3, var4] = lines.shift().split(" "); 
 
 //para ler linhas com um unico valor na mesma linha use o comando a seguir
-//let valorA = lines.shift();
+//let valor = lines.shift();

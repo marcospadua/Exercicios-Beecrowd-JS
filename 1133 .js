@@ -11,8 +11,25 @@ let lines = conteudoArquivo.split(quebraLinhaWindows);
 //let [var1, var2, var3, var4] = lines.shift().split(" "); 
 
 //para ler linhas com um unico valor na mesma linha use o comando a seguir
-let valor = lines.shift();
+let valor1 = parseInt(lines.shift());
+let valor2 = parseInt(lines.shift());
 
-for (let i = 0; i < 10; i++){
-    if(valor[i])
+let valores = [valor1, valor2]
+valores.sort((a, b) => a - b);
+
+valor1 = valores[0];
+valor2 = valores[1];
+
+let contador = 0;
+for(let i = valor1 + 1; i < valor2; i++){
+    if(i % 5 === 2 && i > 0||i % 5 === 3 && i > 0){
+        contador += i
+        console.log(contador);
+        contador = 0;
+    }
 }
+
+
+
+
+

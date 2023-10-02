@@ -8,8 +8,15 @@ let lines = conteudoArquivo.split(quebraLinhaWindows);
 
 ///////////////////////COLAR NO BEECROWD O CODIGO DESTE PONTO EM DIANTE///////////////////
 //para ler linhas com mais de um valor na mesma linha use o comando a seguir
-//let [] = lines.shift().split(" "); 
+let [var1, var2] = lines.shift().split(" "); 
 
 //para ler linhas com um unico valor na mesma linha use o comando a seguir
 //let valorA = lines.shift();
 
+var1 = parseInt(var1);
+var2 = parseInt(var2);
+
+for(let i = 1; i < var2; i++){
+    console.log(`${i} ${i + 1} ${ i + 2}`);
+    i+= 2
+}

@@ -11,25 +11,34 @@ let lines = conteudoArquivo.split(quebraLinhaWindows);
 //let [var1, var2, var3, var4] = lines.shift().split(" "); 
 
 //para ler linhas com um unico valor na mesma linha use o comando a seguir
-let valor1 = parseInt(lines.shift());
-let valor2 = parseInt(lines.shift());
 
-let valores = [valor1, valor2]
-valores.sort((a, b) => a - b);
+let alcool = 0;
+let gasolina = 0;
+let diesel = 0;
+let valoresEntradas;
+let opcao = 0;
 
-valor1 = valores[0];
-valor2 = valores[1];
+do{
+    let repete = true
+    do{
+        valoresEntradas = Number(lines.shift());
 
-let contador = 0;
-for(valor1; valor1 < valor2; valor1++){
-    if(valor1 % 5 === 2 ||valor1 % 5 === 3){
-        contador += valor1
-        console.log(contador);
-        contador = 0;
-    }
-}
+        if(valoresEntradas === 1){
+            alcool++
+        }else if(valoresEntradas === 2){
+            gasolina++
+        }else if(valoresEntradas ===3){
+            diesel++
+        }else {
+            repete = false
+        }
 
+    }while(repete === true)
 
-
-
-
+    opcao = valoresEntradas;
+    
+}while(opcao !== 4)
+console.log(`MUITO OBRIGADO
+Alcool: ${alcool}
+Gasolina: ${gasolina}
+Diesel: ${diesel}`);
