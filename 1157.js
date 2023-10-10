@@ -8,15 +8,17 @@ let lines = conteudoArquivo.split(quebraLinhaWindows);
 
 ///////////////////////COLAR NO BEECROWD O CODIGO DESTE PONTO EM DIANTE///////////////////
 //para ler linhas com mais de um valor na mesma linha use o comando a seguir
-let [a, n] = lines.shift().split(" "); 
+//let [var1, var2, var3, var4] = lines.shift().split(" "); 
 
 //para ler linhas com um unico valor na mesma linha use o comando a seguir
-//let valorA = lines.shift();
+let n = Number(lines.shift());
+let divisor = 0
 
 
+for(let i = 1; i <= n; i++){
+  divisor = n / i;
+  if(Number.isInteger(divisor)){
+    console.log(i);
+  }
 
-
-
-
-
-
+}
