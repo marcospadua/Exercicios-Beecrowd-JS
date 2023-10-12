@@ -8,14 +8,25 @@ let lines = conteudoArquivo.split(quebraLinhaWindows);
 
 ///////////////////////COLAR NO BEECROWD O CODIGO DESTE PONTO EM DIANTE///////////////////
 //para ler linhas com mais de um valor na mesma linha use o comando a seguir
-//let [golsInter, golsGremio] = lines.shift().split(" "); 
+//let [var1, var2, var3, var4] = lines.shift().split(" "); 
 
 //para ler linhas com um unico valor na mesma linha use o comando a seguir
-//let valorA = lines.shift();
+// let valor = Number(lines.shift());
 
+// let valores
+// function adicionaNumero(valor){
+//   valores.push(Number(valor))
 
+//   if(valores.length === 20){
+//     for(let i = 0; i < 10; i++){
+//       const temp = valor[i];
+//       valores[i] = valor[19 - i];
+//       valores[19 - i] = temp
+//     }
+//     for(let i = 0; i < 20; i++){
+//       console.log(`N[${i}] = N[${i}]`);
+//     }
+//   }
+// }
 
-
-
-
-
+// adicionaNumero(valor)
