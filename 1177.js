@@ -11,15 +11,20 @@ let lines = conteudoArquivo.split(quebraLinhaWindows);
 //let [var1, var2, var3, var4] = lines.shift().split(" "); 
 
 //para ler linhas com um unico valor na mesma linha use o comando a seguir
+let valor = Number(lines.shift());
 
-let valores = []
+function preencheValor(t){
+  let n = []
 
-for (let i = 0; i < 20; i++) {
-  let valor = Number(lines.shift());
-  valores.push(valor)
+  for(let i = 0; i < 1000; i++){
+    n[i] = i % t
+  }
+
+  return n
 }
-valores.reverse()
 
-for(let i = 0; i < 20; i++){
-  console.log(`N[${i}] = ${valores.shift()}`);
+vetorN = preencheValor(valor)
+
+for(let i = 0; i < 1000; i++ ){
+  console.log(`N[${i}] = ${vetorN[i]}`);
 }
